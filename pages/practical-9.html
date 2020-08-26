@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-9</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <h2>SKYNET</h2>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="menu">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#about-container">About</a></li>
+        <li><a href="#technology-container">Technologies</a></li>
+        <li><a href="#contact-container">Contact</a></li>
+        <label for="chk" class="hide-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+    <div id="section1">
+
+    </div>
+    <div id="practical-title">
+      <!-- <img src="../images/header.jpg" alt="header"> -->
+      <div><h1>Practical-9</h1></div>
+    </div>
+
+    <div id="team-members-container">
+      <h3>Team Members</h3>
+      <img class="person-image" src="../images/1.png" alt="person-img title="Member-1">
+      <img class="person-image" src="../images/2.png" alt="person-img title="Member-2">
+      <img class="person-image" src="../images/3.png" alt="person-img title="Member-3">
+      <img class="person-image" src="../images/9.png" alt="person-img title="Member-4">
+    </div>
+
+    <div id="about-container">
+      <h3>About Us</h3>
+      <div id="about-left">
+        <h2>About Projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div id="about-right">
+        <div class="p p1">
+          <h2>practical-1</h2>
+        </div>
+        <div class="p p2">
+          <h2>practical-2</h2>
+        </div>
+        <div class="p p3">
+          <h2>practical-3</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="technology-container">
+      <h3>Technologies Used</h3>
+      <div class="tech">
+        <img class="tech-images" src="../images/html.png" alt="html-image">
+        <p class="tech-title">Introduction to HTML</p>
+        <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+        Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+        </p>
+        <br>
+        <a class="button" href="HTMLpage.html">Read More</a>
+      </div>
+      <div class="tech">
+        <img class="tech-images" src="../images/CSS.jpg" alt="html-image">
+        <p class="tech-title">Introduction to CSS</p>
+        <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process
+        of making web pages presentable. CSS handles the look and feel part of a web page.
+        </p>
+        <br>
+        <a class="button" href="CSSpage.html">Read More</a>
+      </div>
+      <div class="tech">
+        <img class="tech-images" src="../images/node js.jpg" alt="html-image">
+        <p class="tech-title">Introduction to JavaScript</p>
+        <p>JavaScript is a dynamic computer programming language. It is lightweight and commonly used as a part of web
+        pages, whose implementations allow client-side script to interact with user.
+        </p>
+        <br>
+        <a class="button" href="BootstrapPage.html">Read More</a>
+      </div>
+      <div class="tech">
+        <img class="tech-images" src="../images/bootstrap.jpeg" alt="html-image">
+        <p class="tech-title">Introduction to Bootstrap</p>
+        <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process
+        of making web pages presentable. CSS handles the look and feel part of a web page.
+        </p>
+        <br>
+        <a class="button" href="Node js page.html">Read More</a>
+      </div>
+    </div>
+
+    <div id="contact-container">
+      <h3 id="contact-title">Contact</h3>
+      <div id="contact-details">
+          <br>
+          <br>
+        <p id="copyright-titile">© Copyright 2020</p>
+        <a href="#section1">
+          Back to top
+        </a>
+      </div>
+    </div>
+  </body>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    .header{
+      width: 100%;
+      height: 70px;
+      background-color: grey;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+    }
+
+    .header h2{
+      line-height: 70px;
+      float: left;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .header .menu{
+      list-style: none;
+      float: right;
+      text-transform: uppercase;
+    }
+
+    .menu li{
+      display: inline;
+      line-height: 70px;
+    }
+
+    .menu li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      padding: 0 20px;
+      transition: 0.4s;
+    }
+
+    .menu li a:hover, .show-btn:hover, .hide-btn:hover{
+      color: skyblue;
+    }
+
+    .show-btn, .hide-btn{
+      line-height: 70px;
+      font-size: 30px;
+      color: #fff;
+      display: none;
+    }
+
+    .show-btn{
+      float: right;
+    }
+
+    #chk{
+      position: absolute;
+      visibility: hidden;
+      z-index: -10;
+    }
+    p {
+      margin-bottom: 15px;
+      padding: 5px;
+      color: #595238;
+      font-size: 20px;
+      overflow: auto;
+    }
+    #section1{
+      height: 35px;
+    }
+
+    #practical-title {
+      background-image: url('../images/header.jpg');
+      height: 780px;
+      text-align: center;
+      background-size: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+      padding: 30px;
+      top: 0;
+    }
+
+    #team-members-container {
+      text-align: center;
+      padding-top: 100px;
+      width: 100%;
+    }
+
+    .person-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background-color: #a6feff;
+      display: inline-block;
+      padding: 30px;
+      margin: 30px 12px 0px 12px;
+    }
+
+    #about-container {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    #about-container::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    #about-left {
+      width: 47%;
+      height: 630px;
+      background-color: #e97171;
+      color: #fff;
+      padding: 15px;
+      float: left;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    #about-right {
+      float: right;
+      width: 50%;
+      height: 600px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 2.7rem;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .p {
+      height: 200px;
+    }
+
+    .p1 {
+      background-image: url('../images/p1.jpg');
+      margin-bottom: 15px;
+    }
+
+    .p2 {
+      background-image: url('../images/p2.jpeg');
+      margin-bottom: 15px;
+    }
+
+    .p3 {
+      background-image: url('../images/p3.jpg');
+    }
+
+    #technology-container {
+      padding-top: 100px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .tech {
+      height: 600px;
+      width: 20%;
+      background-color: #a6feff;
+      line-height: 1.5;
+      display: inline-block;
+      margin: 15px;
+    }
+
+    .tech-images {
+      width: 100%;
+      height: 37%;
+    }
+
+    .tech-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      color: black;
+    }
+
+    .button {
+      background-color: red;
+      padding: 10px 60px;
+      text-decoration: none;
+      color: #fff;
+      line-height: 1;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+      animation-direction: alternate;
+    }
+
+    #contact-container {
+      text-align: center;
+      padding-top: 93px;
+    }
+
+    #contact-title {
+      margin-bottom: 20px;
+    }
+
+    #contact-details {
+      background-color: #40a794;
+      height: 150px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    #copyright-titile{
+      color: black;
+    }
+
+    @media screen and (max-width: 1250px){
+
+    #practical-title {
+      height: 600px;
+    }
+
+    .person-image {
+      width: 380px;
+      height: 380px;
+      padding: 40px;
+      margin: 30px 30px 0px 30px;
+    }
+
+    #about-left {
+      width: 100%;
+      padding: 25px;
+      line-height: 2.0;
+      height: 650px;
+    }
+
+    #about-right {
+      width: 100%;
+    }
+
+    .tech {
+      width: 40%;
+      margin: 25px;
+      line-height: 2.0;
+    }
+}
+
+    @media screen and (max-width: 900px) {
+
+        .show-btn, .hide-btn{
+          display: block;
+        }
+
+        .menu{
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100vh;
+          background-color: #333;
+          text-align: center;
+          padding: 80px 0;
+          transition: .7s;
+          line-height: normal;
+        }
+
+        #chk:checked ~ .menu{
+          right: 0;
+        }
+
+        .menu li{
+          display: block;
+        }
+
+        .menu li a{
+          display: block;
+        }
+
+        .hide-btn{
+          position: absolute;
+          right: 20px;
+          top: 10px;
+        }
+
+        #practical-title {
+      height: 450px;
+        }   
+
+        .person-image {
+      width: 300px;
+      height: 300px;
+      margin: 30px 22px 0px 22px;
+        }
+
+        #about-left {
+      width: 100%;
+      padding: 25px;
+      line-height: 2.0;
+      height: 600px;
+        }
+
+        #about-right {
+      width: 100%;
+        }
+
+        .tech {
+      width: 35%;
+      margin: 25px;
+      line-height: 1.5;
+        }
+
+    }
+    @media screen and (max-width: 700px) {
+        #practical-title {
+      height: 360px;
+        }   
+
+        .person-image {
+      width: 350px;
+      height: 350px;
+      margin: 30px 22px 0px 22px;
+        }
+
+        #about-left {
+      width: 100%;
+      padding: 25px;
+      line-height: 2.0;
+      height: 800px;
+        }
+
+        .tech {
+      width: 55%;
+      margin: 25px;
+      line-height: 1.5;
+        }
+
+    }
+  </style>
+</html>
