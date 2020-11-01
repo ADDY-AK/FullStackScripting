@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Counter: JS Project-1</title>
+  <style media="screen">
+    body{
+      background-color: #f7d1ba;
+    }
+
+    div{
+      text-align: center;
+    }
+
+    h1{
+      color: #f6830f;
+      font-size: 80px;
+    }
+
+    #decrement {
+      padding: 10px 20px;
+      text-shadow: 1px 1px 1px #202020;
+      font-size: 18pt;
+      border: 5px solid white;
+      color: #373a40;
+      margin-right: 50px;
+    }
+
+    #increment {
+      padding: 10px 20px;
+      text-shadow: 1px 1px 1px #202020;
+      font-size: 18pt;
+      border: 5px solid #f08a5d;
+      color: #373a40;
+      margin-left: 50px;
+    }
+
+    p{
+      display: inline-block;
+      font-size: 50px;
+      color: greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>COUNTER</h1>
+    <button id="decrement" disabled>-</button>
+    <p id="num">0</p>
+    <button id="increment">+</button>
+  </div>
+
+  <script>
+    var count = 0;
+    var text = document.getElementById("num");
+    text.innerHTML = count;
+
+    function btn(){
+      if(count==0){
+        document.getElementById("decrement").disabled = true;
+        document.getElementById("decrement").style = "border: 5px solid white";
+      } else {
+        document.getElementById("decrement").disabled = false;
+        document.getElementById("decrement").style = "border: 5px solid #d7385e";
+      }
+    }
+
+    var button1 = document.getElementById("increment");
+    button1.onclick = function increment() {
+      count += 1;
+      text.innerHTML = count;
+      btn();
+    }
+
+    var button2 = document.getElementById("decrement");
+    button2.onclick = function decrement() {
+      if(count!=0){
+      count -= 1;
+      text.innerHTML = count;
+    }
+    btn();
+  }
+  </script>
+
+</body>
+
+</html>
