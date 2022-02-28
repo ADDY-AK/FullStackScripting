@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+span{
+    color: brown;
+}
+.rating{
+    display: inline;
+}
+div i{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.body{
+    margin: 10px;
+}
